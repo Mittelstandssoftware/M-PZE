@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" ng-app="DashboardApp">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/angular.min.js"></script>
 
     <title>M-PZE Dashboard</title>
 
@@ -19,7 +23,7 @@
 
 </head>
 
-<body>
+<body ng-controller="DashboardCtrl" id="DashboardCtrl">
 
 <div class="coming-back">
     <div class="coming-content">
@@ -45,6 +49,12 @@
                         <button class="btn btn-danger pull-right">Ausstempeln</button>
                         <button class="btn btn-success pull-right margin-right-80">Einstempeln</button>
                     </div>
+                    <div>
+                        <label>Name:</label>
+                        <input type="text" style="color: #000;" ng-model="yourName" placeholder="Enter a name here">
+                        <hr>
+                        <h1>Hello {{yourName}}!</h1>
+                    </div>
                 </div>
             </div>
         </div>
@@ -52,7 +62,6 @@
 </div>
 
 <!-- Scripts -->
-<script src="../js/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 
 <script src="../js/jquery.countdown.min.js"></script>
