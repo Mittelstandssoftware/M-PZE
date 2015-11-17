@@ -1,18 +1,4 @@
-/**
- * Created by nils.maschmann on 16.11.2015.
- */
+angular.module('DashboardApp', [])
+    .controller('DashboardCtrl', function() {
 
-'use strict';
-
-angular.module('DashboardApp', ['ngRoute'])
-
-    .config(['$routeProvider', function($routeProvider) {
-        $routeProvider.when('/dashboard.html', {
-            templateUrl: 'views/dashboard.html',
-            controller: 'DashboardCtrl'
-        });
-    }])
-
-    .controller('DashboardCtrl', [function() {
-
-    }]);
+    });

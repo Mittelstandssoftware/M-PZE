@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="LoginApp">
 
 <head>
     <meta charset="UTF-8">
@@ -12,14 +12,17 @@
     <meta name="description" content="">
 
     <!-- CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/style-blue.css" rel="stylesheet" title="default">
-    <link href="css/main.css" rel="stylesheet" title="default">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/animate.min.css" rel="stylesheet">
+    <link href="../css/style-blue.css" rel="stylesheet" title="default">
+    <link href="../css/main.css" rel="stylesheet" title="default">
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/angular.min.js"></script>
 </head>
 
-<body>
+<body ng-controller="LoginCtrl" id="LoginCtrl">
 
 <div class="paper-back-full">
     <div class="login-form-full">
@@ -44,10 +47,6 @@
                                     <span class="input-group-addon"><i class="fa fa-lock"></i></span>
                                     <input type="password" class="form-control" placeholder="Passwort">
                                 </div>
-                                <!--<div class="checkbox">
-                                    <input type="checkbox" id="checkbox_remember">
-                                    <label for="checkbox_remember">Remember me</label>
-                                </div>-->
                                 <button type="submit" class="btn btn-ar btn-primary margin-top-20 pull-right">Login</button>
                                 <div class="clearfix"></div>
                             </div>
@@ -59,11 +58,11 @@
     </div>
 </div>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/angular.min.js"></script>
 
-<script src="js/home_login_full.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/home_login_full.js"></script>
+
+<script src="../js/login.js"></script>
 
 </body>
 

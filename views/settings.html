@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de" ng-app="DashboardApp">
+<html lang="de" ng-app="SettingsApp">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/angular.min.js"></script>
 
-    <title>M-PZE Dashboard</title>
+    <title>M-PZE Einstellungen</title>
 
     <meta name="description" content="">
 
@@ -23,7 +23,7 @@
 
 </head>
 
-<body ng-controller="DashboardCtrl" id="DashboardCtrl">
+<body ng-controller="SettingsCtrl" id="SettingsCtrl">
 
 <div class="coming-back">
     <nav class="navbar navbar-static-top navbar-default navbar-inverse">
@@ -49,30 +49,27 @@
     <div class="coming-content">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-md-push-6">
-                    <div class="coming-counter">
-                        <h1 class="animated fadeInRight animation-delay-6">Coming Soon</h1>
-                        <div id="getting-started" class="animated fadeInRight animation-delay-7">
+                <div class="col-md-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">Passwort ändern</div>
+                        <div class="panel-body">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="oldPassword">Altes Passwort</label>
+                                    <input type="password" class="form-control" id="oldPassword" placeholder="Altes Passwort eingeben">
+                                </div>
+                                <div class="form-group">
+                                    <label for="newPassword">Neues Passwort</label>
+                                    <input type="password" class="form-control" id="newPassword" placeholder="Neues Passwort eingeben">
+                                </div>
+                                <div class="form-group">
+                                    <label for="newPasswordRepeat">Neues Passwort wiederholen</label>
+                                    <input type="password" class="form-control" id="newPasswordRepeat" placeholder="Neues Passwort wiederholen">
+                                </div>
+                                <button type="submit" class="btn btn-ar btn-primary">Passwort ändern</button>
+                            </form>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="coming-desc">
-                        <h1 class="animated fadeInDown animation-delay-5">artificial reason</h1>
-                        <p class="animated fadeInDown animation-delay-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum facere tempora sapiente, non molestiae quibusdam incidunt id deserunt beatae unde rem nisi, temporibus itaque laboriosam ex! Illum optio neque amet officiis doloribus.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="margin-top-20">
-                        <textarea rows="3" type="text" class="form-control no-resize member-activity-input" id="member-activity" placeholder="Tätigkeit / Notiz"></textarea>
-                    </div>
-                    <div class="pull-right margin-top-20">
-                        <button class="btn btn-success margin-right-80">Einstempeln</button>
-                        <button class="btn btn-danger">Ausstempeln</button>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -81,10 +78,7 @@
 
 <!-- Scripts -->
 <script src="../js/bootstrap.min.js"></script>
-<script src="../js/dashboard.js"></script>
-
-<script src="../js/jquery.countdown.min.js"></script>
-<script src="../js/coming.js"></script>
+<script src="../js/settings.js"></script>
 
 </body>
 
