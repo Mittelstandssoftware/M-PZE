@@ -26,7 +26,7 @@
 <body ng-controller="DashboardCtrl" id="DashboardCtrl">
 
 <div class="coming-back">
-    <nav class="navbar navbar-static-top navbar-default navbar-inverse">
+    <nav class="navbar navbar-static-top navbar-default navbar-inverse navbar-light-white">
         <div class="container">
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
@@ -64,9 +64,9 @@
                         <p class="animated fadeInDown animation-delay-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum facere tempora sapiente, non molestiae quibusdam incidunt id deserunt beatae unde rem nisi, temporibus itaque laboriosam ex! Illum optio neque amet officiis doloribus.</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 animated fadeInRight animation-delay-6">
                     <div class="margin-top-20">
-                        <textarea rows="3" type="text" class="form-control no-resize member-activity-input" id="member-activity" placeholder="Tätigkeit / Notiz"></textarea>
+                        <textarea rows="3" type="text" class="form-control no-resize member-activity-input textarea-dark" id="member-activity" placeholder="Tätigkeit / Notiz eingeben"></textarea>
                     </div>
                     <div class="pull-right margin-top-20">
                         <button class="btn btn-success margin-right-80">Einstempeln</button>
@@ -80,6 +80,7 @@
 </div>
 
 <!-- Scripts -->
+<script src="http://ajax.aspnetcdn.com/ajax/mobileservices/MobileServices.Web-1.2.7.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/dashboard.js"></script>
 

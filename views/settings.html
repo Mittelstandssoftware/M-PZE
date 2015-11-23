@@ -26,7 +26,7 @@
 <body ng-controller="SettingsCtrl" id="SettingsCtrl">
 
 <div class="coming-back">
-    <nav class="navbar navbar-static-top navbar-default navbar-inverse">
+    <nav class="navbar navbar-static-top navbar-default navbar-inverse navbar-light-white">
         <div class="container">
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
@@ -50,23 +50,45 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">Passwort ändern</div>
+                    <div class="panel panel-header-dark panel-dark animated fadeIn animation-delay-5">
+                        <div class="panel-heading panel-heading-dark">Passwort ändern</div>
                         <div class="panel-body">
                             <form role="form">
                                 <div class="form-group">
                                     <label for="oldPassword">Altes Passwort</label>
-                                    <input type="password" class="form-control" id="oldPassword" placeholder="Altes Passwort eingeben">
+                                    <input type="password" class="form-control input-dark" id="oldPassword" placeholder="Altes Passwort eingeben">
                                 </div>
                                 <div class="form-group">
                                     <label for="newPassword">Neues Passwort</label>
-                                    <input type="password" class="form-control" id="newPassword" placeholder="Neues Passwort eingeben">
+                                    <input type="password" class="form-control input-dark" id="newPassword" placeholder="Neues Passwort eingeben">
                                 </div>
                                 <div class="form-group">
                                     <label for="newPasswordRepeat">Neues Passwort wiederholen</label>
-                                    <input type="password" class="form-control" id="newPasswordRepeat" placeholder="Neues Passwort wiederholen">
+                                    <input type="password" class="form-control input-dark" id="newPasswordRepeat" placeholder="Neues Passwort wiederholen">
                                 </div>
                                 <button type="submit" class="btn btn-ar btn-primary">Passwort ändern</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-header-dark panel-dark animated fadeIn animation-delay-5">
+                        <div class="panel-heading panel-heading-dark">Neuen Benutzer anlegen</div>
+                        <div class="panel-body">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="username">Benutzername</label>
+                                    <input type="text" class="form-control input-dark" id="username" placeholder="Benutzername eingeben">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Password">Passwort</label>
+                                    <input type="password" class="form-control input-dark" id="Password" placeholder="Passwort eingeben">
+                                </div>
+                                <div class="form-group">
+                                    <label for="PasswordRepeat">Passwort wiederholen</label>
+                                    <input type="password" class="form-control input-dark" id="PasswordRepeat" placeholder="Passwort wiederholen">
+                                </div>
+                                <button type="submit" class="btn btn-ar btn-primary">Benutzer anlegen</button>
                             </form>
                         </div>
                     </div>
@@ -77,6 +99,7 @@
 </div>
 
 <!-- Scripts -->
+<script src="http://ajax.aspnetcdn.com/ajax/mobileservices/MobileServices.Web-1.2.7.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/settings.js"></script>
 
