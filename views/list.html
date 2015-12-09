@@ -52,26 +52,10 @@
     <div class="coming-content">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6" ng-repeat="member in members">
                     <ul class="member-list">
-                        <li class="animated fadeInUp animation-delay-5"><i class="fa fa-user"></i> Nils Maschmann <p class="member-activity">programmiert M-PZE</p></li>
-                        <li class="animated fadeInUp animation-delay-5"><i class="fa fa-user"></i> Erich Brozmann <p class="member-activity">in einer Besprechung</p></li>
-                        <li class="animated fadeInUp animation-delay-5"><i class="fa fa-user"></i> Eugen Metzler <p class="member-activity">App programmieren</p></li>
+                        <li class="animated fadeInUp animation-delay-5"><i class="fa fa-user"></i> {{member.name}} <p class="member-activity">{{member.activity}}</p></li>
                     </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul class="member-list">
-                        <li class="animated fadeInUp animation-delay-5"><i class="fa fa-user"></i> Torsten Zwoch <p class="member-activity">tut Dinge</p></li>
-                        <li class="animated fadeInUp animation-delay-5"><i class="fa fa-user"></i> Marius Hoppe <p class="member-activity">proggen</p></li>
-                        <li class="animated fadeInUp animation-delay-5"><i class="fa fa-user"></i> Michael Suermann <p class="member-activity">bei einem Kunden</p></li>
-                    </ul>
-                    <!--
-                    <div>
-                        <label>Name:</label>
-                        <input type="text" style="color: #000;" ng-model="yourName" placeholder="Enter a name here">
-                        <hr>
-                        <h1>Hello {{yourName}}!</h1>
-                    </div>-->
                 </div>
             </div>
         </div>
