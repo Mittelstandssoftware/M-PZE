@@ -5,8 +5,8 @@ angular.module('LoginApp', [])
             var un = document.getElementById("username").value;
             var pw = document.getElementById("password").value;
             var valid = false;
-            var unArray = ["admin", "nm", "eb", "em"];  // as many as you like - no comma after final entry
-            var pwArray = ["admin", "nm", "eb", "em"];  // the corresponding passwords;
+            var unArray = ["admin", "nm", "eb", "em"];
+            var pwArray = ["admin", "nm", "eb", "em"];
             for (var i=0; i <unArray.length; i++) {
                 if ((un == unArray[i]) && (pw == pwArray[i])) {
                     valid = true;
