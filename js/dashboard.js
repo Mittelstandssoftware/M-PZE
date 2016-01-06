@@ -17,7 +17,7 @@ angular.module('DashboardApp', [])
             document.getElementById("start").style.display="none";
             document.getElementById("stop").style.display="block";
             document.getElementById("continue").style.display="none";
-            timer=setTimeout($scope.go(), 1000);
+            timer=setTimeout("$scope.go()", 1000);
         };
 
         $scope.go = function() {
